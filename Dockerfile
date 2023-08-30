@@ -1,7 +1,7 @@
-FROM quay.io/suhailtechinfo/suhail
-RUN git clone https://github.com/SuhailTechInfo/Suhail-Md /root/Suhail
-WORKDIR /root/Suhail/
+FROM quay.io/vorterx/vorterx:latest
+RUN git clone https://github.com/Vorterx/Aztec-MD /root/vorterx
+WORKDIR /root/vorterx/
 RUN npm install
-EXPOSE 8000
-CMD ["npm", "start"]
+EXPOSE 8080
+CMD ["node", "start"]
  
